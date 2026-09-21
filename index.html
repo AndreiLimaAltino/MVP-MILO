@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004c3b">
+  <meta name="description" content="Conheça a Milo: uma proposta de organização financeira em validação. Explore o protótipo e participe dos primeiros testes.">
+  <title>Milo — seu dinheiro faz mais sentido aqui</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#" aria-label="Milo, início">milo<span class="logo-dot">.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="menu" aria-label="Navegação principal">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#seu-momento">Para você e seu negócio</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="button button-small nav-cta" href="#lista-espera" data-nav-label="header_waitlist">Entrar na lista <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> MENOS CONTAS NA CABEÇA. MAIS VIDA.</p>
+        <h1>Seu dinheiro<br>faz mais<br><span>sentido aqui.</span></h1>
+        <p class="hero-description">Contas, cartões e a vida acontecendo. A Milo quer reunir tudo e organizar suas movimentações para você enxergar o que realmente importa.</p>
+        <div class="hero-actions">
+          <a class="button button-lime" href="#lista-espera" id="hero-cta">Quero experimentar a Milo <span aria-hidden="true">↗</span></a>
+          <a class="hero-secondary" href="#como-funciona" data-nav-label="hero_how_it_works">Entender como funciona <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">A Milo está em fase de validação. Cadastre-se para participar dos primeiros testes.</p>
+        <div class="interest-proof" aria-live="polite">
+          <span class="interest-dot" aria-hidden="true"></span>
+          <strong id="interest-count">127</strong>
+          <span>pessoas já demonstraram interesse na Milo.</span>
+        </div>
+      </div>
+
+      <div class="hero-product" aria-label="Exemplo ilustrativo do painel Milo">
+        <div class="orbit-label">Tudo conectado. Tudo mais claro.</div>
+        <div class="overview">
+          <div class="overview-top"><span class="mini-logo">milo.</span><span class="profile-chip">Seu espaço pessoal <span aria-hidden="true">⌄</span></span></div>
+          <div class="overview-greeting"><div><p>Seu mês, em uma visão</p><h2>Bom dia, Lucas <span aria-hidden="true">✳</span></h2></div><span class="avatar">L</span></div>
+          <div class="balance"><span>Saldo total das contas</span><strong>R$ 4.850<span>,00</span></strong><div><span>3 contas reunidas</span><span class="balance-icon" aria-hidden="true">↗</span></div></div>
+          <div class="cash-flow"><div><span>↓ Entradas do mês</span><strong>R$ 6.200,00</strong></div><div><span>↑ Saídas do mês</span><strong>R$ 3.450,00</strong></div></div>
+          <div class="expenses"><div class="expenses-heading"><h3>Para onde foi?</h3><span>Este mês</span></div><div class="chart-layout"><div class="donut" role="img" aria-label="Moradia 45%, alimentação 30%, outros 25%"><div><small>Saídas</small><b>R$ 3.450</b></div></div><ul class="legend"><li><i></i>Moradia <b>45%</b></li><li><i></i>Alimentação <b>30%</b></li><li><i></i>Outros <b>25%</b></li></ul></div></div>
+          <div class="overview-bottom"><span>Visão geral</span><span>Movimentações</span><span>Meus espaços</span></div>
+        </div>
+        <div class="floating-note"><span class="check-icon">✓</span><div><strong>Menos trabalho manual.</strong><span>Mais tempo para seus planos.</span></div></div>
+        <p class="mockup-caption">Prévia conceitual da experiência Milo • dados ilustrativos</p>
+      </div>
+    </div>
+    <div class="hero-bottom container"><span>UMA VIDA FINANCEIRA. UMA VISÃO COMPLETA.</span><a href="#como-funciona" aria-label="Entenda como funciona" data-nav-label="hero_explore">Explore <span aria-hidden="true">↓</span></a></div>
+  </section>
+
+  <div class="principles" aria-label="Princípios Milo"><div class="container"><span>Seu dinheiro, conectado</span><b aria-hidden="true">✳</b><span>Organização no automático</span><b aria-hidden="true">✳</b><span>Clareza para decidir</span></div></div>
+
+  <section class="section container problem-section" aria-labelledby="problema-titulo">
+    <div class="section-heading">
+      <p class="eyebrow">QUANDO TUDO ESTÁ ESPALHADO</p>
+      <h2 id="problema-titulo">Seu dinheiro não deveria exigir<br><span>mais uma planilha.</span></h2>
+      <p>As informações já existem. O problema é quando contas, cartões e controles ficam separados demais para virarem clareza.</p>
+    </div>
+    <div class="problem-grid">
+      <article><span class="problem-number">01</span><h3>Dinheiro espalhado</h3><p>Contas, cartões, bancos e aplicativos diferentes dificultam a visão completa da vida financeira.</p></article>
+      <article><span class="problem-number">02</span><h3>Muito trabalho manual</h3><p>Planilhas, anotações e lançamentos manuais exigem disciplina constante e acabam sendo deixados de lado.</p></article>
+      <article><span class="problem-number">03</span><h3>Pessoal e trabalho se misturam</h3><p>Para quem trabalha por conta própria, separar o dinheiro pessoal do dinheiro do negócio pode ficar ainda mais difícil.</p></article>
+    </div>
+  </section>
+
+  <section class="section how container" id="como-funciona">
+    <div class="section-heading"><p class="eyebrow">A VIDA JÁ TEM ABAS DEMAIS</p><h2>Feche as planilhas.<br><span>Abra possibilidades.</span></h2><p>Você não precisa de mais um lugar para preencher números. A proposta da Milo é reduzir o trabalho manual para facilitar a leitura do todo.</p></div>
+    <div class="steps">
+      <article><span class="step-number">01 / CONECTAR</span><div class="step-symbol" aria-hidden="true">↔</div><h3>Suas contas se encontram.</h3><p>A proposta é reunir informações de contas e cartões em um único ambiente, com integrações futuras como Open Finance.</p></article>
+      <article><span class="step-number">02 / ORGANIZAR</span><div class="step-symbol" aria-hidden="true">≋</div><h3>A organização acontece.</h3><p>Movimentações poderão ser importadas e categorizadas automaticamente, reduzindo tarefas manuais e permitindo ajustes quando necessário.</p></article>
+      <article><span class="step-number">03 / ENTENDER</span><div class="step-symbol" aria-hidden="true">↗</div><h3>Você vê o que importa.</h3><p>Entradas, saídas, categorias e movimentações poderão aparecer de forma mais clara para ajudar na leitura do mês.</p></article>
+    </div>
+    <p class="validation-note"><strong>Neste MVP:</strong> as integrações bancárias ainda não estão implementadas. A experiência abaixo é uma demonstração conceitual.</p>
+  </section>
+
+  <section class="demo-section" id="demonstracao">
+    <div class="container demo-grid">
+      <div class="demo-copy"><p class="eyebrow">EXPERIMENTE A IDEIA</p><h2>De “onde foi parar?”<br>a <span>“agora entendi”.</span></h2><p>Uma visão para a sua vida. Outra para o seu trabalho. Explore como a Milo pode organizar cada lado, sem misturar as contas.</p><div class="space-tabs" role="tablist" aria-label="Espaço financeiro"><button id="tab-personal" role="tab" aria-selected="true" aria-controls="demo-panel" data-space="personal">Meu dia a dia</button><button id="tab-business" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1" data-space="business">Meu negócio</button></div><div class="demo-description"><span class="check-icon">✓</span><p id="space-description">Entenda seus gastos por categoria e acompanhe as movimentações do mês em um só lugar.</p></div><p class="fine-print">Demonstração interativa com dados fictícios. Nenhuma conta bancária está conectada.</p></div>
+      <div class="demo-panel" id="demo-panel" role="tabpanel" aria-labelledby="tab-personal" tabindex="0"><div class="panel-header"><div><span class="eyebrow">SEU ESPAÇO</span><h3 id="space-title">Minha vida, em dia.</h3></div><span class="demo-badge">DEMO</span></div><div class="demo-total"><span id="total-label">Saldo das contas</span><strong id="total-value">R$ 4.850,00</strong></div><div class="demo-stats"><div><span>Entradas do mês</span><strong id="income-value">R$ 6.200,00</strong></div><div><span>Saídas do mês</span><strong id="outcome-value">R$ 3.450,00</strong></div></div><div class="transactions-heading"><h4>Últimas movimentações</h4><label class="sr-only" for="category-filter">Filtrar movimentações</label><select id="category-filter"><option value="all">Todas</option><option value="in">Entradas</option><option value="out">Saídas</option></select></div><ul class="transactions" id="transactions"></ul><p class="panel-footnote" id="transaction-status" aria-live="polite"></p></div>
+    </div>
+  </section>
+
+  <section class="section container audience" id="seu-momento">
+    <div class="section-heading heading-split"><div><p class="eyebrow">CRESÇA NO SEU RITMO</p><h2>Para a vida que você tem.<br><span>E a que está construindo.</span></h2></div><p>Comece pelo pessoal. Quando o trabalho pedir mais, a proposta é que sua organização financeira evolua junto.</p></div>
+    <div class="audience-grid">
+      <article class="personal-card"><span class="tag">MILO PERSONAL</span><h3>Mais presença na vida.<br>Menos tempo nas contas.</h3><p>Para quem quer entender melhor as finanças pessoais, reunir informações e reduzir controles manuais.</p><div class="category-pills" aria-label="Exemplos de categorias"><span>⌂ Sua casa</span><span>↗ Seus planos</span><span>☀ Seu tempo</span></div><a href="#planos" data-nav-label="personal_to_plans">Encontre seu plano <span aria-hidden="true">↗</span></a></article>
+      <article class="business-card"><span class="tag">MILO PRO + BUSINESS</span><h3>Seu negócio cresce.<br>A clareza fica.</h3><p>Para autônomos, freelancers, MEIs e pequenos negócios que precisam acompanhar receitas e despesas separadamente das finanças pessoais.</p><div class="business-summary"><span>Seu trabalho, em perspectiva</span><div><span>Receitas</span><div class="mini-bar bar-income"></div></div><div><span>Despesas</span><div class="mini-bar bar-outcome"></div></div></div><a href="#demonstracao" data-demo="business">Explore o espaço profissional <span aria-hidden="true">↗</span></a></article>
+    </div>
+  </section>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">CLAREZA QUE ACOMPANHA VOCÊ</p><h2>Menos fragmentação.<br><span>Mais contexto.</span></h2></div>
+      <div class="benefit-grid">
+        <article><span aria-hidden="true">◎</span><h3>Tudo em uma visão</h3><p>Contas, cartões, entradas e saídas reunidos em uma experiência mais simples.</p></article>
+        <article><span aria-hidden="true">≋</span><h3>Organização no automático</h3><p>A proposta é reduzir o trabalho manual usando importação e categorização de movimentações.</p></article>
+        <article><span aria-hidden="true">↗</span><h3>Da vida pessoal ao negócio</h3><p>Comece organizando o pessoal e evolua para uma experiência profissional conforme sua necessidade cresce.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="clarity container"><span class="clarity-star" aria-hidden="true">✳</span><div><p class="eyebrow">AUTOMAÇÃO COM VOCÊ NO CONTROLE</p><h2>O dinheiro é seu.<br>As decisões também.</h2></div><div class="clarity-text"><p>A Milo foi pensada para organizar informações e facilitar a leitura da sua vida financeira. Você acompanha, revisa as categorias e decide seus próximos passos.</p><p class="clarity-note">A Milo é uma proposta de plataforma de gestão financeira, não um banco. Neste MVP, todas as informações são demonstrativas.</p></div></section>
+
+  <section class="section container" id="planos">
+    <div class="section-heading plans-heading"><p class="eyebrow">UM ESPAÇO PARA CADA MOMENTO</p><h2>Seu próximo passo<br><span>cabe aqui.</span></h2><p>Os planos abaixo fazem parte do teste de interesse. Nenhum botão realiza contratação ou cobrança.</p></div>
+    <div class="plans">
+      <article class="plan"><span class="plan-label">PARA COMEÇAR</span><h3>Personal</h3><p>Clareza para o seu dia a dia.</p><div class="price">Grátis</div><span class="price-note">Proposta de plano com limites de uso</span><a href="#lista-espera" data-plan="Personal" class="button button-outline">Quero o Personal <span>↗</span></a><ul><li>Visão das finanças pessoais</li><li>Contas e cartões centralizados</li><li>Organização de movimentações</li><li>Acompanhamento de gastos</li></ul></article>
+      <article class="plan plan-featured"><span class="plan-label">DO PESSOAL AO PROFISSIONAL</span><h3>Pro</h3><p>Para quem faz a vida acontecer.</p><div class="price"><small>R$</small> 40<span>/mês</span></div><span class="price-note">Preço estimado para validação</span><a href="#lista-espera" data-plan="Pro" class="button button-dark">Tenho interesse no Pro <span>↗</span></a><ul><li>Tudo do Personal</li><li>Espaço profissional</li><li>Separação entre pessoal e trabalho</li><li>Visão de receitas e despesas</li></ul></article>
+      <article class="plan"><span class="plan-label">PARA O SEU NEGÓCIO</span><h3>Business</h3><p>Mais visão para empreender.</p><div class="price"><small>R$</small> 100<span>/mês*</span></div><span class="price-note">Estimativa inicial, a partir deste valor</span><a href="#lista-espera" data-plan="Business" class="button button-outline">Tenho interesse no Business <span>↗</span></a><ul><li>Gestão para MEIs e pequenos negócios</li><li>Receitas e despesas</li><li>Visão de resultado</li><li>Relatórios futuros</li></ul></article>
+    </div>
+    <p class="plans-note">Preços e limites apresentados fazem parte da validação e podem mudar. Não há contratação ou cobrança nesta página.</p>
+  </section>
+
+  <!--
+  DEPOIMENTOS FICTÍCIOS / ILUSTRATIVOS UTILIZADOS APENAS PARA O MVP FUMAÇA.
+  Estas pessoas não são clientes reais da Milo.
+  Substituir por avaliações reais caso o produto avance e existam
+  usuários reais autorizando sua utilização.
+  -->
+  <section class="reviews-section" aria-labelledby="reviews-title">
+    <div class="container reviews-shell">
+      <div class="reviews-heading">
+        <div>
+          <p class="eyebrow">O QUE ESTÃO ACHANDO</p>
+          <h2 id="reviews-title">Experiências simples.<br><span>Opiniões que vão direto ao ponto.</span></h2>
+        </div>
+        <span class="reviews-disclaimer">Avaliações ilustrativas do MVP</span>
+      </div>
+      <div class="reviews-strip" aria-label="Depoimentos ilustrativos">
+        <article class="review-card">
+          <div class="review-top"><span class="review-avatar" aria-hidden="true">M</span><div><strong>Marina A.</strong><small>Finanças pessoais</small></div><span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span></div>
+          <p>“Gostei de ver contas, gastos e categorias na mesma tela. A leitura do mês ficou muito mais rápida e sem aquela sensação de informação espalhada.”</p>
+        </article>
+        <article class="review-card">
+          <div class="review-top"><span class="review-avatar" aria-hidden="true">C</span><div><strong>Caio R.</strong><small>Freelancer</small></div><span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span></div>
+          <p>“Separar meu dia a dia do trabalho no mesmo app foi o que mais funcionou para mim. Fica claro sem precisar voltar para várias planilhas.”</p>
+        </article>
+        <article class="review-card">
+          <div class="review-top"><span class="review-avatar" aria-hidden="true">J</span><div><strong>Juliana P.</strong><small>MEI</small></div><span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span></div>
+          <p>“Consegui acompanhar entradas e despesas do negócio sem me perder em várias telas. A visão geral é simples e direta.”</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="media-showcase" aria-labelledby="media-title">
+    <div class="container">
+      <div class="section-heading media-heading">
+        <p class="eyebrow">A MILO NO DIA A DIA</p>
+        <h2 id="media-title">Organizar fica mais simples<br><span>quando tudo faz sentido.</span></h2>
+        <p>Veja a proposta da Milo em contexto: uma experiência curta em vídeo e uma visão realista do aplicativo sendo usado no dia a dia.</p>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card media-card-video">
+          <div class="media-visual media-video-wrap">
+            <video
+              class="promo-video"
+              id="milo-promo-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/milo-video-poster.jpg"
+              aria-label="Vídeo curto mostrando uma pessoa utilizando a Milo no celular"
+            >
+              <source src="assets/milo-demo.mp4" type="video/mp4">
+              Seu navegador não consegue reproduzir este vídeo.
+            </video>
+            <span class="media-badge">VÍDEO • 6 SEGUNDOS</span>
+            <button class="video-toggle" id="video-toggle" type="button" aria-label="Pausar vídeo" aria-pressed="true">
+              <span aria-hidden="true">❚❚</span>
+            </button>
+          </div>
+          <div class="media-card-copy">
+            <span>EXPERIÊNCIA MILO</span>
+            <h3>Um jeito mais leve de acompanhar suas contas.</h3>
+            <p>Uma prévia visual de como a Milo pode fazer parte da rotina, trazendo as informações financeiras para uma experiência simples e organizada.</p>
+          </div>
+        </article>
+
+        <article class="media-card media-card-image">
+          <div class="media-visual media-image-wrap">
+            <img
+              class="usage-photo"
+              src="assets/pessoa-usando-milo.webp"
+              alt="Pessoa consultando no celular um painel da Milo com saldo, entradas, saídas, categorias e movimentações"
+              loading="lazy"
+              decoding="async"
+            >
+            <span class="media-badge">MILO EM USO</span>
+          </div>
+          <div class="media-card-copy">
+            <span>NA ROTINA</span>
+            <h3>Suas finanças reunidas em uma visão clara.</h3>
+            <p>Saldo, entradas, saídas, categorias e movimentações aparecem juntos para reduzir a sensação de ter informações espalhadas por todos os lados.</p>
+          </div>
+        </article>
+      </div>
+      <p class="media-disclaimer">Materiais visuais ilustrativos da experiência proposta para o MVP da Milo.</p>
+    </div>
+  </section>
+
+  <section class="waitlist-section" id="lista-espera" aria-labelledby="waitlist-title">
+    <div class="container waitlist-grid">
+      <div class="waitlist-copy"><p class="eyebrow">SEJA UM DOS PRIMEIROS</p><h2 id="waitlist-title">Quer ver a Milo<br><span>sair do papel?</span></h2><p>Estamos validando a ideia antes de desenvolver o produto completo. Deixe seu contato se você gostaria de experimentar a Milo quando os primeiros testes começarem.</p><div class="waitlist-assurance"><span class="check-icon">✓</span><p><strong>Sem cobrança. Sem cartão.</strong><br>Estamos apenas validando o interesse na ideia.</p></div></div>
+      <div class="waitlist-card">
+        <div class="selected-plan-hint" id="selected-plan-hint" hidden><span>Interesse selecionado</span><strong id="selected-plan-text"></strong></div>
+        <form id="waitlist-form" novalidate>
+          <div class="field-row">
+            <div class="field"><label for="lead-name">Nome <span aria-hidden="true">*</span></label><input id="lead-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="lead-email">E-mail <span aria-hidden="true">*</span></label><input id="lead-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="lead-profile">Como você se identifica?</label><select id="lead-profile" name="profile"><option value="Quero organizar minhas finanças pessoais">Quero organizar minhas finanças pessoais</option><option value="Sou freelancer ou autônomo">Sou freelancer ou autônomo</option><option value="Sou MEI">Sou MEI</option><option value="Tenho um pequeno negócio">Tenho um pequeno negócio</option><option value="Outro">Outro</option></select></div>
+          <div class="field"><label for="lead-difficulty">Qual é sua maior dificuldade financeira hoje? <span class="optional">Opcional</span></label><textarea id="lead-difficulty" name="difficulty" rows="4" placeholder="Ex.: acompanhar vários cartões, separar pessoal e trabalho..."></textarea></div>
+          <div class="field"><label for="lead-plan">Qual versão da Milo mais interessa?</label><select id="lead-plan" name="plan"><option value="Ainda não sei">Ainda não sei</option><option value="Personal">Personal</option><option value="Pro">Pro</option><option value="Business">Business</option></select></div>
+          <label class="checkbox-field" for="lead-interview"><input id="lead-interview" name="interviewInterest" type="checkbox"><span>Quero participar de entrevistas rápidas sobre a Milo.</span></label>
+          <button class="button button-dark waitlist-submit" type="submit">Entrar na lista de espera <span aria-hidden="true">↗</span></button>
+          <p class="form-privacy">Os dados ficam apenas neste navegador neste protótipo. Não existe envio para servidor.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="duvidas">
+    <div class="container faq-grid">
+      <div><p class="eyebrow">SEM COMPLICAÇÃO</p><h2>Uma coisa a menos<br>para ficar na dúvida.</h2></div>
+      <div class="faq">
+        <details><summary>A Milo já existe?<span aria-hidden="true">+</span></summary><p>Ainda não como produto completo. Esta página apresenta uma proposta em fase de validação.</p></details>
+        <details><summary>A Milo é um banco?<span aria-hidden="true">+</span></summary><p>Não. A Milo é uma proposta de plataforma de organização e gestão financeira.</p></details>
+        <details><summary>Minha conta bancária será conectada?<span aria-hidden="true">+</span></summary><p>Não neste MVP. Não existe conexão bancária real nesta página.</p></details>
+        <details><summary>O que posso testar agora?<span aria-hidden="true">+</span></summary><p>Você pode explorar uma demonstração conceitual, alternar entre experiências pessoais e profissionais e registrar seu interesse.</p></details>
+        <details><summary>Por que vocês estão pedindo meu e-mail?<span aria-hidden="true">+</span></summary><p>Para medir o interesse na proposta e identificar pessoas que desejem participar dos primeiros testes caso o projeto avance. Neste protótipo sem backend, o dado fica salvo apenas no seu navegador.</p></details>
+        <details><summary>Os preços são definitivos?<span aria-hidden="true">+</span></summary><p>Não. Os preços fazem parte da hipótese sendo validada e podem mudar.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="container"><p class="eyebrow">MENOS ESFORÇO. MAIS CLAREZA.</p><h2>A vida vai além<br>das contas.<span> Ainda bem.</span></h2><p class="closing-copy">Se a Milo ajudaria você a entender melhor seu dinheiro, queremos saber.</p><a class="button button-dark" href="#lista-espera" id="final-cta">Quero participar dos primeiros testes <span aria-hidden="true">↗</span></a><span class="closing-mark" aria-hidden="true">milo.</span></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-top"><a class="logo" href="#">milo.</a><p>Seu dinheiro faz mais sentido aqui.</p><a href="#conteudo">Voltar ao início ↑</a></div>
+  <div class="container footer-bottom"><span>© 2026 Milo · Projeto conceitual em fase de validação.</span><span>Automação. Simplicidade. Centralização.</span></div>
+</footer>
+</body>
+</html>
